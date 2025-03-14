@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek | Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white flex justify-between items-center p-4 shadow-md">
+        <div class="text-2xl font-bold" data-aos="fade-down">Portfolio</div>
+        <nav data-aos="fade-down" data-aos-delay="300">
+            <a href="#about-section" class="mx-3 hover:text-blue-400">About Me</a>
+            <a href="#contact" class="mx-3 hover:text-blue-400">Contact</a>
+        </nav>
+    </header>
+    
+    <!-- Animated Text -->
+    <h2 id="animatedText" class="text-3xl font-bold text-center my-6 h-10" data-aos="fade-up"></h2>
+    
+    <!-- Avatar Section -->
+        <div class="flex flex-col items-center p-6">
+            <img src="anbhav.jpg" alt="Abhishek's Avatar" 
+             class="w-36 h-36 rounded-full shadow-md transition-transform duration-300 hover:scale-110" 
+                data-aos="zoom-in">
+            <div id="about-section" class="text-lg mt-4 text-center" data-aos="fade-up" data-aos-delay="300">
+                "From writing my first ‘Hello, World!’ to building the next big thing—this is just the beginning.
+            </div>
+        </div>
+
+    <!-- Skills Section -->
+    <section class="text-center mt-10 my-8">
+        <h2 class="text-2xl font-bold" data-aos="fade-up">Skills</h2>
+        <div class="flex flex-wrap justify-center gap-3 mt-4">
+            <span class="bg-gray-800 text-white px-4 py-2 rounded-lg text-lg" data-aos="fade-up" data-aos-delay="200">HTML</span>
+            <span class="bg-gray-800 text-white px-4 py-2 rounded-lg text-lg" data-aos="fade-up" data-aos-delay="400">CSS</span>
+            <span class="bg-gray-800 text-white px-4 py-2 rounded-lg text-lg" data-aos="fade-up" data-aos-delay="600">JavaScript</span>
+            <span class="bg-gray-800 text-white px-4 py-2 rounded-lg text-lg" data-aos="fade-up" data-aos-delay="800">React.js</span>
+            <span class="bg-gray-800 text-white px-4 py-2 rounded-lg text-lg" data-aos="fade-up" data-aos-delay="1000">C++</span>
+            <span class="bg-gray-800 text-white px-4 py-2 rounded-lg text-lg" data-aos="fade-up" data-aos-delay="1200">C</span>
+            <span class="bg-gray-800 text-white px-4 py-2 rounded-lg text-lg" data-aos="fade-up" data-aos-delay="1400">DSA</span>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="text-center mt-10 my-8">
+        <h2 class="text-2xl font-bold">Projects</h2>
+        <div class="flex flex-wrap justify-center gap-3 mt-4">
+          <!--<div class="bg-white p-4 shadow-md rounded-lg w-64 hover:shadow-lg">
+                <h3 class="font-bold">Social-media Website</h3>
+                <p class="text-sm text-gray-600">Built with React.js & MongoDB</p>
+                <a href="https://github.com/anbhav20/social-media-app" target="_blank" class="text-blue-500 hover:underline">View Project</a>
+            </div>-->  
+            <div class="bg-white p-4 shadow-md rounded-lg w-64 hover:shadow-lg ">Project 1</div>
+            <div class="bg-white p-4 shadow-md rounded-lg w-64 hover:shadow-lg ">Project 2</div>
+            <div class="bg-white p-4 shadow-md rounded-lg w-64 hover:shadow-lg">Project 3</div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="text-center mt-10 my-8">
+        <h2 class="text-2xl font-bold" data-aos="fade-up">Contact</h2>
+        <div class="flex justify-center space-x-4 text-2xl mt-4">
+            <a href="mailto:spidey.9449@gmail.com" class="hover:text-blue-500" data-aos="zoom-in"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.instagram.com/__anbhav" target="_blank" class="hover:text-blue-500" data-aos="zoom-in" data-aos-delay="300"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/abhishek-singh-48b18a246" target="_blank" class="hover:text-blue-500" data-aos="zoom-in" data-aos-delay="600"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/anbhav20" target="_blank" class="hover:text-blue-500" data-aos="zoom-in" data-aos-delay="900"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+
+    <!--Download CV-->
+    <section id="CV" class="text-center mt-10 my-8">
+        <h2 class="text-xl font-bold" data-aos="fade-up">Download CV</h2>
+        <div class="flex justify-center space-x-4 text-xl mt-4">
+            <a href="AbhishekCV.pdf" download class="mt-2 inline-block bg-gray-800 text-white text-sm px-2 py-1 rounded-lg hover:bg-gray-700 transition" data-aos="fade-up" data-aos-delay="1200">
+                Download CV
+            </a>
+        </div>
+    </section>
+    
+    
+    <!-- Contact Form -->
+    <div class="max-w-md mx-auto mt-10 bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+        <h2 class="text-xl font-bold text-center">Get in Touch</h2>
+        <form id="contactForm" class="mt-4">
+            <input type="text" id="name" placeholder="Your Name" class="w-full p-2 border rounded-md my-2" required>
+            <input type="email" id="email" placeholder="Your Email" class="w-full p-2 border rounded-md my-2" required>
+            <textarea id="message" placeholder="Your Message" rows="4" class="w-full p-2 border rounded-md my-2" required></textarea>
+            <button type="submit" class="w-full bg-gray-800 text-white py-2 rounded-md hover:bg-gray-700">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Form submission google form -->
+    <script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Default form submission rokna
+
+    let formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+    };
+
+    fetch("https://script.google.com/macros/s/AKfycbxCku_20L_lWh_0pP0yjWXwlPHKgEpFXzq8jfrmsoehjTra6b5Iyu-hTNCv-WlG4XQt/exec", { 
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+    }).then(() => {
+        alert("Message sent successfully!");
+        document.getElementById("contactForm").reset();
+    }).catch(err => console.log(err));
+});
+
+//Typing Animation Script 
+           document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+        function typeMessage(elementId, messages, delay = 1000) {
+            let elem = document.getElementById(elementId);
+            let index = 0;
+            let charIndex = 0;
+            function type() {
+                if (charIndex < messages[index].length) {
+                    elem.textContent += messages[index][charIndex];
+                    charIndex++;
+                    setTimeout(type, 100);
+                } else {
+                    setTimeout(() => {
+                        elem.textContent = "";
+                        index = (index + 1) % messages.length;
+                        charIndex = 0;
+                        type();
+                    }, delay);
+                }
+            }
+            type();
+        }
+        typeMessage("animatedText", ["Hi!", "I'm Abhishek."], 1000);
+    </script>
+
+    <!-- AOS Library Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration
+            once: true, // Animation runs only once
+        });
+    </script>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+        <p>&copy; 2025 Abhishek Singh. All Rights Reserved.</p>
+        <p>Made with ❤️ by Abhishek</p>
+    </footer>
+    
+</body>
+</html>
